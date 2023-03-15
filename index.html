@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Foodexpress</title>
+    
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="d-flex">
+          <div class="header-img">
+            <img src="/logo nature.png" alt="logo" class="img-fluid" />
+          </div>
+          <div class="menu-list">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Page</a></li>
+              <li><a href="#">blog</a></li>
+            </ul>
+          </div>
+          <div class="header-btn"><a href="#">Contacts</a></div>
+        </div>
+      </div>
+    </header>
+
+
+    <section class="banner">
+     <div class="container">
+      <div class="banner-flex">
+        <div class="bnr-img">
+          <img src="/product-3 (1).jpg" alt="" class="img-fluid">
+
+        </div>
+       <div class="bnr-content">
+       
+       <h1>Our Products</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Fuga magni sunt nulla exercitationem iste sit? 
+           Incidunt iste harum mollitia maxime.</p>
+      <a href="#" class="yellow-btn">My services</a>
+      <a href="#" class="red-btn">Contacts</a>
+       </div>
+      </div>
+    </div>
+    </section>
+
+     
+
+
+    <section class="my-product">
+      
+      <div class="container">
+        <div class="my-product-head">
+          <h1>My Products</h1>
+          <span>A vegetable is the edible portion of a plant.</span>
+        </div>
+
+        <div class="my-product-flex">
+          <div class="design-img">
+            <img src="/lady finger.webp" alt="" class="img-fluid" />
+            <span>Lady finger</span>
+           
+          </div>
+
+          <div class="design-img">
+            <img src="/peas.webp" alt="" class="img-fluid" />
+            <span>Pea</span>
+          </div>
+
+          <div class="design-img">
+            <img src="/product-1 (1).jpg" alt="" class="img-fluid" />
+            <span>Mango</span>
+          </div>
+
+          <div class="design-img">
+            <img src="/product-2 (1).jpg" alt="" class="img-fluid" />
+            <span>Cabbage</span>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+  
+
+
+
+
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing-flex">
+          <div class="pricing-details">
+            <img src="/product-7.jpg" alt="">
+            <h3>$59</h3>
+            <b>Pototo</b>
+            <ul>
+              <form>  
+                <label> Select value</label>  
+                <select>  
+                <option value = "500 gm"> 500 gm   
+                </option>  
+                <option value = "1 kg"> 1 kg  
+                </option>  
+                </select>  
+                </form> 
+              <p></p>
+            </ul>
+            <a href="https://www.bigbasket.com/" class="yellow-btn">Add to cart</a>
+          </div>
+
+          <div class="pricing-details">
+            <img src="/product-14.jpg" alt="">
+            <h3>$59</h3>
+            <b>Chilli</b>
+            <ul>
+              <form>  
+                <label> Select value</label>  
+                <select>  
+                <option value = "500 gm"> 500 gm   
+                </option>  
+                <option value = "1 kg"> 1 kg  
+                </option>  
+                </select>  
+                </form> 
+              <p></p>
+            </ul>
+            <a href="https://www.bigbasket.com/" class="yellow-btn">Add to cart</a>
+          </div>
+
+          <div class="pricing-details">
+            <img src="/product-11.jpg" alt="">
+            <h3>$59</h3>
+            <b>Veg</b>
+            <ul>
+              <form>  
+                <label> Select value</label>  
+                <select>  
+                <option value = "500 gm"> 500 gm  
+                </option>  
+                <option value = "1 kg"> 1 kg  
+                </option>  
+                </select>  
+                </form> 
+              <p></p>
+            </ul>
+            <a href="https://www.bigbasket.com/" class="yellow-btn">Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <style>
+      .slider {
+        width: 500px;
+        height: 300px;
+        background-color: yellow;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        text-align: center;
+        overflow: hidden;
+      }
+      .image-container {
+        width: 1500px;
+        background-color: pink;
+        height: 300px;
+        clear: both;
+        position: relative;
+        -webkit-transition: left 2s;
+        -moz-transition: left 2s;
+        -o-transition: left 2s;
+        transition: left 2s;
+      }
+      .slide {
+        float: left;
+        margin: 0px;
+        padding: 0px;
+        position: relative;
+      }
+      #slide-1:target ~ .image-container {
+        left: 0px;
+      }
+      #slide-2:target ~ .image-container {
+        left: -500px;
+      }
+      #slide-3:target ~ .image-container {
+        left: -1000px;
+      }
+      .buttons {
+        position: relative;
+        top: -20px;
+      }
+      .buttons a {
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        border-radius: 50px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slider">
+      <span id="slide-1"></span>
+      <span id="slide-2"></span>
+      <span id="slide-3"></span>
+      <div class="image-container">
+        <img src="/product-5.jpg" class="slide" width="500" height="300" />
+        <img src="/product-7.jpg" class="slide" width="500" height="300" />
+        <img src="/promo5.jpg" class="slide" width="500" height="300" />
+      </div>
+      <div class="buttons">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <section class="Ordernow">
+      <div class="container">
+        <div class="Ordernow-flex">
+          <div class="frm">
+            <form action="#">
+              <h2>Contact Me</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, nihil! Voluptate vel minima dignissimos aliquam
+                laboriosam similique maxime, alias quis.
+              </p>
+              <input type="text" id="fname" name="fname" placeholder="Name*" />
+              <input type="text" placeholder="Email*" />
+              <input
+                style="min-height: 60px"
+                type="text"
+                placeholder="Message"
+              /><br />
+              <button type="submit">Send Mesage</button>
+            </form>
+          </div>
+          <div class="Ordernow-img">
+            <img src="/contact me.jpg" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <footer>
+      <div class="container">
+        <div><p>&#x24B8; Copyright 2025 Mobirise - All Rights Reserve</p></div>
+      </div>
+    </footer>
+
+  </body>
+  </html>
